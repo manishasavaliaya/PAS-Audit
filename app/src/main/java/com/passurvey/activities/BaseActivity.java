@@ -92,7 +92,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.toggleSoftInputFromWindow(view.getWindowToken(), InputMethodManager.SHOW_FORCED, 0);
     }
-    //
+
 //    @Override
 //    public void onGetSentenceSuggestions(SentenceSuggestionsInfo[] results) {
 //        final StringBuffer sb = new StringBuffer("");
