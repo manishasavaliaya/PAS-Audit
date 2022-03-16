@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="white_transparent">#315b78</color>
+
+    <color name="buttonBg">#8a0201</color>
+    <color name="buttonBgDark">#c68a0201</color>
+    <color name="buttonCloseBg">#9cb282</color>
+    <color name="buttonCloseBgDark">#cd9cb282</color>
+
+    <color name="search_bg">#D3D4D6</color>
+
+    <color name="colorRed">#8a0201</color>
+    <color name="colorOrange">#ff940a</color>
+    <color name="colorGreen">#9cb282</color>
+    <color name="colorRedDark">#c38a8a</color>
+    <color name="colorGray">#767676</color>
+    <color name="colorListDivider">#62767676</color>
+    <color name="colorGrayDark">#ededed</color>
+    <color name="colorTime">#ad4e4e</color>
+
+    <!--app-->
+    <color name="colorTextGray">#363a3d</color>
+    <color name="colorAppBlue">#3498db</color>
+    <color name="colorAppBlueSelected">#025890</color>
+    <color name="colorBackground">#c6c7c8</color><!--cacbcc-->
+    <color name="colorBackgroundinput">#f9f9f9</color>
+    <color name="colorBtnBorder">#363a3d</color>
+    <color name="colorAnsListBackground">#354b60</color><!--6c7a89-->
+
+    <color name="colorDrawerText">#8baabd</color>
+    <color name="colorDisplayNameText">#bcdbf1</color>
+    <color name="colorDrawerListText">#b8cedc</color>
+    <color name="colorFullTransparrent">#00000000</color>
+    <color name="colorDrawerSurveyNameBack">#172C3F</color>
+    <color name="colorDrawerlistBack">#1b394e</color>
+    <color name="colorselectdefaultans">#6e8091</color>
+
+    <color name="currentgroupcolor">#091721</color>
+
+
+   <!-- submenu colour  b8cedc
+    sidebar display  name  bcdbf1-->
+
+    <color name="blue_200">#FF90CAF9</color>
+    <color name="blue_500">#FF2196F3</color>
+    <color name="blue_700">#FF1976D2</color>
+
+</resources>

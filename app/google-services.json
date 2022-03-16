@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "627365829513",
+    "firebase_url": "https://pasaudit-9c732.firebaseio.com",
+    "project_id": "pasaudit-9c732",
+    "storage_bucket": "pasaudit-9c732.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627365829513:android:6e896b4cb003e8e0",
+        "android_client_info": {
+          "package_name": "com.passurvey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627365829513-v83dlj4taquhf9kfm4tq8v7ke10uu2ng.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.passurvey",
+            "certificate_hash": "9ae4301d9049ffd3abe043aa2a9551d3c42c0da5"
+          }
+        },
+        {
+          "client_id": "627365829513-69v7b2ip138g9p3rs74m4g6ohqj285uf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.passurvey",
+            "certificate_hash": "8853ff4d5e84f274d6c42978eeebc7bfa8de0540"
+          }
+        },
+        {
+          "client_id": "627365829513-1jm5p99k6hbpab1bafevg36opbak6m0l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.passurvey",
+            "certificate_hash": "d2959e7c42b9217c1dcb52afe6e715286a6d4247"
+          }
+        },
+        {
+          "client_id": "627365829513-ekrdm1oa3svfrp1jpe08r0urb296nkgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb_NzBeV_0ukfblc5wwM9CvXZI86B3icc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627365829513-ekrdm1oa3svfrp1jpe08r0urb296nkgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

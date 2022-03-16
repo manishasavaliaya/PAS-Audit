@@ -1,0 +1,205 @@
+<resources>
+    <string name="app_name">PAS Audit</string>
+    <!--<string name="app_name">PAS Lift Audit</string>-->
+
+    <string name="title_profile">PROFILE</string>
+    <string name="title_survey">AUDIT</string>
+    <string name="title_summary">SUMMARY</string>
+    <string name="title_thankyou">THANK YOU</string>
+
+    <string name="title_photo">SUPPORTING PHOTOGRAPHS</string>
+
+    <!--login_screen-->
+    <string name="logintitlestarsurvey">login to start audit"</string>
+    <string name="loginusername">username"</string>
+
+    <!--profle screen-->
+    <string name="profile_details">Profile Details"</string>
+    <string name="fund">Fund</string>
+    <string name="co_managing_agent">C/O Managing Agent</string>
+    <string name="managind_surveyour">Managing Auditor</string>
+    <string name="management_surveyor">Management Surveyor</string>
+    <string name="employee">Employee</string>
+    <string name="facilities_manager">Facilities Manager</string>
+    <string name="next">Next</string>
+    <string name="client">CLIENT</string>
+    <string name="management_auditor">Select Managing Auditor"</string>
+
+    <string name="questioin_select">Select Question</string>
+    <string name="site_address">Site Address</string>
+    <string name="site_name">Site Name</string>
+    <string name="site_address1">Address1</string>
+    <string name="site_address2">Address2</string>
+    <string name="site_address3">Address3</string>
+    <string name="site_pincode">Post Code</string>
+
+    <string name="report_preparedby">Report Prepared by</string>
+    <string name="report_checkeddby">Report Checked by</string>
+
+    <string name="sel_report_preparedby">Select Report Prepared by</string>
+    <string name="sel_report_checkeddby">Select Report Checked by</string>
+    <string name="main_action_crop">CROP</string>
+    <string name="main_action_rotate">Rotate 90 degrees clockwise</string>
+
+
+    <string name="audit_date">Audit Date</string>
+    <string name="dateofissue">Date of Issue</string>
+    <string name="audit_visit">Audit Visit</string>
+
+
+    <string name="fund_error">Enter fund</string>
+    <string name="comanging_error">Enter C/O Managing Agent</string>
+    <string name="management_error">Select Managing Auditor</string>
+    <string name="facilities_error">Enter facilities manager</string>
+    <string name="siteaddress_error">Enter site address</string>
+    <string name="employee_error">Enter Employee</string>
+    <string name="management_surveyor_error">Enter Management Surveyor</string>
+    <string name="siteName_error">Enter site name</string>
+
+    <string name="sitepostalcode_error">Enter site post code</string>
+
+    <string name="reportprepared_error">Enter report prepared by</string>
+    <string name="reportcheck_error">Enter report checked by</string>
+    <string name="auditdate_error">Select audit date</string>
+    <string name="dateofissue_error">Select date of issue</string>
+    <string name="auditvisit_error">Select Audit visit</string>
+
+
+    <string name="contractorperfomance_error">Enter contractors performance</string>
+    <string name="statutoryaudit_error">Select statutory audit score</string>
+    <string name="contractorsneedimprove_error">Enter contractors need to improve performance</string>
+    <string name="consultantscoomment_error">Enter Consultants Comments</string>
+
+    <string name="statutorycomment_error">Enter Statutory Certification Comments</string>
+
+    <string name="complete_survey">Complete Audit &amp; Sync</string>
+    <!--incomplete survey-->
+    <string name="incomplete_survey">Incomplete Audit"</string>
+    <string name="incomplete">incomplete"</string>
+
+    <!--select survey-->
+    <string name="select_survey">Select Audit</string>
+    <!--select priority-->
+    <string name="select_priority">Select Priority</string>
+
+    <!--select  Question Group-->
+    <string name="select_question_group">Select Question Group"</string>
+    <string name="answer">Answer"</string>
+    <string name="select_default_answer">Select Default Answer"</string>
+    <string name="type_answer_here">Type answer here..."</string>
+    <string name="select_answer">Select Answer"</string>
+
+    <string name="select_comments">Select Comments"</string>
+
+    <!-- Thank you-->
+    <string name="thankyou_message">First group of question is completed successfully"</string>
+
+    <!--Toast Messages-->
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="username_error">Enter username</string>
+    <string name="password_error">Enter password</string>
+    <string name="server_error">Server error</string>
+    <string name="answer_error">Enter answer</string>
+
+    <!--Login-->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <!--Navigation Drawer-->
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_friends">Friends</string>
+    <string name="nav_item_notifications">Messages</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+
+    <!--Drawer-->
+    <string name="welcome">Welcome</string>
+    <string name="profile">PROFILE</string>
+    <string name="logout">LOGOUT</string>
+
+    <!--No Data Found-->
+    <string name="nodata">No Data</string>
+    <string name="nosurvey">No Audit </string>
+    <string name="hasnoquestion">has no question</string>
+    <string name="select_survey_first">Select Audit first</string>
+
+
+    <!--Fill Out the Details-->
+    <string name="filloutthedetails">Fill Out The Details</string>
+    <string name="contractorsPerfomance">Contractors Performance</string>
+    <string name="statutoryaudit">Statutory Audit Score</string>
+    <string name="contractorsneed">Contractors Need to Improve Performance</string>
+<!--    //Manisha 27-02-20-->
+<!--    <string name="consultantscomments">Consultants Comments</string>-->
+    <string name="consultantscomments">Consultants comments on contractor performance</string>
+    <string name="consultantscommentsclient">Consultants comments for client consideration</string>
+
+    <string name="wantlogout">Are you sure you want to logout?</string>
+
+    <string name="syncofflinemessage">Your data will be sync automatically when internet is available</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="backtoexit">Please click BACK again to exit</string>
+
+
+    <string name="image_validation">Please select image</string>
+    <string name="comment_validation">Please Enter comment</string>
+    <string name="image_select_validation">You can not add more then Twenty images</string>
+
+    <string name="statutory_certification_comments">Statutory Certification Comments</string>
+
+
+    <!--Drawer profile message-->
+    <string name="select_and_fill">Select Audit and fill the profile data first</string>
+
+    <!--complete surveey-->
+
+
+    <string name="complete">Complete</string>
+    <string name="completeProfile">Complete profile first</string>
+    <string name="completesummary">Complete summary first</string>
+    <string name="completesurvey"> Complete Audit first</string>
+    <string name="certificatedate">Last Certificate Date</string>
+    <string name="photouploading">Photo Uploading...</string>
+
+    <!--<string name="dummytext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </string>-->
+    <!-- Rich Text -->
+    <!-- Menu -->
+    <string name="menu_undo">Undo</string>
+    <string name="menu_redo">Redo</string>
+    <string name="menu_github">GitHub</string>
+
+    <!-- Dialog -->
+    <string name="dialog_title">Insert link</string>
+    <string name="dialog_edit_hint">http(s)://</string>
+    <string name="dialog_button_ok">OK</string>
+    <string name="dialog_button_cancel">Cancel</string>
+
+    <!-- Toast -->
+    <string name="toast_bold">Bold</string>
+    <string name="toast_italic">Italic</string>
+    <string name="toast_underline">Underline</string>
+    <string name="toast_strikethrough">Strikethrough</string>
+    <string name="toast_bullet">Bullet</string>
+    <string name="toast_quote">Quote</string>
+    <string name="toast_insert_link">Insert link</string>
+    <string name="toast_format_clear">Format clear</string>
+
+    <string name="toast_completequstiongroupfirst">Please complete all question of</string>
+
+    <string name="Select_comment">Select Comment</string>
+    <string name="notapplicable">Are you sure you want to  \"Not applicable\"  for this audit and inspection ?</string>
+    <string name="Ok">Ok</string>
+    <string name="msgDefaultAnswer">There is not any default answer.</string>
+    <string name="clientcoomment_error">Enter Clients Comments</string>
+    <string name="spellchecker_name">Spell check</string>
+    <!---->
+    <string name="service_label">My Spell Checker</string>
+</resources>

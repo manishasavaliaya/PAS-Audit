@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/RLdrawerrow"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/_30sdp"
+    android:background="@drawable/selector_drawerlist"
+    android:clickable="true">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+
+       >
+
+       <ImageView
+           android:id="@+id/imgQGRowArrow"
+           android:layout_width="@dimen/_12sdp"
+
+           android:layout_height="wrap_content"
+           android:src="@drawable/sidebar_right_icon"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="@dimen/_7sdp"
+           />
+       <TextView
+           android:id="@+id/tvQGRowQuestionName"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColor="@color/colorDrawerListText"
+           android:textSize="@dimen/_10sdp"
+           android:singleLine="true"
+           android:ellipsize="end"
+           android:text="5-12-2016"
+           android:layout_centerVertical="true"
+           android:layout_toRightOf="@+id/imgQGRowArrow"
+           android:gravity="center_vertical"
+           android:layout_marginLeft="@dimen/_5sdp"
+           android:layout_toLeftOf="@+id/FLsidebarRemaing"
+           />
+       <FrameLayout
+           android:id="@+id/FLsidebarRemaing"
+           android:layout_width="@dimen/_22sdp"
+           android:layout_height="@dimen/_22sdp"
+           android:layout_marginRight="@dimen/_7sdp"
+           android:layout_marginLeft="@dimen/_7sdp"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"
+           >
+           <LinearLayout
+               android:id="@+id/LLSidebarRemain"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/sidebar_red_circle"
+               android:orientation="horizontal"
+               android:visibility="gone"
+               >
+               <TextView
+                   android:id="@+id/tvSidebarCount"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   android:textColor="@color/white"
+                   android:textSize="@dimen/_10sdp"
+                   android:text="888"
+                   android:ellipsize="end"
+                   android:singleLine="true"
+                   android:textStyle="bold"
+                   />
+           </LinearLayout>
+       <ImageView
+           android:visibility="visible"
+           android:id="@+id/imgSidebarCheckIcon"
+
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:src="@drawable/sidebar_check_icon"
+          />
+       </FrameLayout>
+   </RelativeLayout>
+
+</RelativeLayout>

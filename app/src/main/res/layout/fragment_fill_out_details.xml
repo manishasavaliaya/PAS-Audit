@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="@dimen/_10sdp"
+    tools:context=".activities.SplashActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/RLSurveyTop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/shape_border_top">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txtStyleWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/filloutthedetails"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--<ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="none"
+                android:background="@drawable/shape_border_bottom"
+                android:layout_below="@+id/RLprofileTop"
+                >-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/RLFillFirst"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/shape_border_bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_11sdp"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tvContractorsPerfomance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:text="@string/contractorsPerfomance"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/LLCPSelectComments"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="@dimen/_25sdp"
+                            android:background="@drawable/shape_default_answer"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_below="@+id/tvContractorsPerfomance">
+
+                            <ImageView
+                                android:id="@+id/imgans_sel_icon"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ans_sel_icon"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="@dimen/_9sdp"
+                                android:layout_marginRight="@dimen/_5sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/white"
+                                android:layout_toRightOf="@+id/imganswer_icon"
+                                android:layout_centerVertical="true"
+                                android:text="@string/select_comments" />
+                        </LinearLayout>
+
+                        <!--RichText-->
+                        <EditText
+                            android:id="@+id/edtContractorsPerfomance"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_below="@+id/LLCPSelectComments"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:background="@drawable/shape_edittext"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:padding="@dimen/_8sdp"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/tvStatutoryAuditScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edtContractorsPerfomance"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:text="@string/statutoryaudit"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                        <com.passurvey.utility.ToggleButtonGroupTableLayout
+                            android:id="@+id/RGonetofive"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvStatutoryAuditScore">
+
+                            <TableRow>
+                                <RadioButton
+                                    android:id="@+id/rad1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:buttonTint="@color/colorTextGray"
+                                    android:text="1"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <RadioButton
+                                    android:id="@+id/rad2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:buttonTint="@color/colorTextGray"
+                                    android:text="2"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <RadioButton
+                                    android:id="@+id/rad3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:buttonTint="@color/colorTextGray"
+                                    android:text="3"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <RadioButton
+                                    android:id="@+id/rad4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:buttonTint="@color/colorTextGray"
+                                    android:text="4"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <RadioButton
+                                    android:id="@+id/rad5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:buttonTint="@color/colorTextGray"
+                                    android:text="5"
+                                    android:textSize="@dimen/_11sdp" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <RadioButton
+                                    android:id="@+id/rad6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+
+                                    android:buttonTint="@color/colorTextGray"
+                                    android:text="6"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <RadioButton
+                                    android:id="@+id/rad7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:buttonTint="@color/colorTextGray"
+                                    android:text="7"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <RadioButton
+                                    android:id="@+id/rad8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:buttonTint="@color/colorTextGray"
+                                    android:text="8"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <RadioButton
+                                    android:id="@+id/rad9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="@color/colorTextGray"
+                                    android:buttonTint="@color/colorTextGray"
+                                    android:drawableTint="@color/colorTextGray"
+                                    android:foregroundTint="@color/colorTextGray"
+                                    android:text="9"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <RadioButton
+                                    android:id="@+id/rad10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:buttonTint="@color/colorTextGray"
+                                    android:text="10"
+                                    android:textSize="@dimen/_11sdp" />
+                            </TableRow>
+
+                            <TableRow>
+                                <RadioButton
+                                    android:id="@+id/rad11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:buttonTint="@color/colorTextGray"
+                                    android:text="11"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <RadioButton
+                                    android:id="@+id/rad12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:buttonTint="@color/colorTextGray"
+                                    android:text="12"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <RadioButton
+                                    android:id="@+id/rad13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:buttonTint="@color/colorTextGray"
+                                    android:text="13"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <RadioButton
+                                    android:id="@+id/rad14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="@color/colorTextGray"
+                                    android:buttonTint="@color/colorTextGray"
+                                    android:drawableTint="@color/colorTextGray"
+                                    android:foregroundTint="@color/colorTextGray"
+                                    android:text="14"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <RadioButton
+                                    android:id="@+id/rad15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:visibility="invisible"
+                                    android:buttonTint="@color/colorTextGray"
+                                    android:text="15"
+                                    android:textSize="@dimen/_11sdp" />
+                            </TableRow>
+
+                        </com.passurvey.utility.ToggleButtonGroupTableLayout>
+                        <!-- <RadioGroup
+                             android:id="@+id/RGonetofive"
+                             android:layout_below="@+id/tvStatutoryAuditScore"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:orientation="horizontal"
+                             >
+                             <RadioButton
+                                 android:id="@+id/rbtnone"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="1"
+                                 android:layout_weight="1"
+                                 />
+                             <RadioButton
+                                 android:id="@+id/rbtntwo"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="2"
+                                 android:layout_weight="1"
+                                 />
+                             <RadioButton
+                                 android:id="@+id/rbtnthree"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="3"
+                                 android:layout_weight="1"
+                                 />
+                             <RadioButton
+                                 android:id="@+id/rbtnfour"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="4"
+                                 android:layout_weight="1"
+                                 />
+                             <RadioButton
+                                 android:id="@+id/rbtnfive"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="5"
+                                 android:layout_weight="1"
+                                 android:checked="false" />
+
+
+                         </RadioGroup>
+                         <RadioGroup
+                             android:id="@+id/RGsixtoten"
+                             android:layout_below="@+id/RGonetofive"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:orientation="horizontal"
+                             >
+                             <RadioButton
+                                 android:id="@+id/rbtnsix"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="6"
+                                 android:layout_weight="1"
+                                 />
+                             <RadioButton
+                                 android:id="@+id/rbtnseven"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="7"
+                                 android:layout_weight="1"
+                                 />
+                             <RadioButton
+                                 android:id="@+id/rbtneight"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="8"
+                                 android:layout_weight="1"
+                                 />
+                             <RadioButton
+                                 android:id="@+id/rbtnnine"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="9"
+                                 android:layout_weight="1"
+                                 />
+                             <RadioButton
+                                 android:id="@+id/rbtnten"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="10"
+                                 android:layout_weight="1"
+                                 />
+                         </RadioGroup>-->
+                        <!--
+                            new change
+                        -->
+                        <TextView
+                            android:id="@+id/tvContractorneedimprovement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/RGonetofive"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/contractorsneed"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/edtContractorneedimprovement"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvContractorneedimprovement"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:background="@drawable/shape_edittext"
+                            android:singleLine="true"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/_11sdp"
+                            android:visibility="gone" />
+                        <!--
+                             new change
+                        -->
+
+                        <LinearLayout
+                            android:id="@+id/lytContractorneedimprovement"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edtContractorneedimprovement"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="horizontal"
+                            android:gravity="right">
+
+                            <ImageView
+                                android:id="@+id/img_UndoContractorneedimprovement"
+                                android:layout_width="@dimen/_26sdp"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/undo_blue"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/img_RedoContractorneedimprovement"
+                                android:layout_width="@dimen/_26sdp"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:src="@drawable/redo_blue"
+                                android:scaleType="fitXY" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnFillNext"
+                            style="@style/txtStyleWhite"
+                            android:layout_width="@dimen/_110sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_below="@+id/lytContractorneedimprovement"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:background="@drawable/next_btn_selector" />
+                    </RelativeLayout>
+
+                    <!--<RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/RLFillSecond"
+                        android:layout_above="@+id/btnFillNext"
+                        android:visibility="visible"
+                        >
+
+                        <TextView
+                            android:id="@+id/tvContractorsComment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="@string/consultantscomments"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            />
+                        <EditText
+                            android:id="@+id/edtContractorsComment"
+                            android:layout_below="@+id/tvContractorsComment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/shape_edittext"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/_11sdp"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:padding="@dimen/_8sdp"
+                            />
+                    </RelativeLayout>-->
+                </RelativeLayout>
+                <!--Cunsultants Comments-->
+                <RelativeLayout
+                    android:id="@+id/RLFillSecond"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/shape_border_bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_11sdp"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tvContractorsComment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:text="@string/consultantscomments"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                        <!--Richtext-->
+                        <!-- <LinearLayout
+                             android:orientation="vertical"
+                             android:id="@+id/LLRichtext1"
+                             android:background="@drawable/shape_answerbox"
+                             android:layout_below="@+id/tvContractorsComment"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginBottom="@dimen/_7sdp"
+                             >
+                             &lt;!&ndash;<jp.wasabeef.richeditor.RichEditor
+                                 android:id="@+id/edtAnswer"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginBottom="@dimen/_8sdp"
+                                 />&ndash;&gt;
+
+                             <com.passurvey.richtext.KnifeText
+                                 android:id="@+id/edtContractorsComment"
+
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent"
+                                 android:minHeight="@dimen/_250sdp"
+                                 android:layout_marginBottom="@dimen/_7sdp"
+                                 android:gravity="top"
+                                 android:inputType="textMultiLine"
+                                 android:background="@null"
+                                 android:textSize="@dimen/_12sdp"
+                                 android:padding="@dimen/_8sdp"
+
+                                 app:bulletColor="@color/colorTextGray"
+                                 app:bulletRadius="@dimen/_3sdp"
+                                 app:bulletGapWidth="@dimen/_5sdp"
+                                 app:historyEnable="true"
+                                 app:historySize="99"
+                                 app:linkColor="@color/blue_500"
+                                 app:linkUnderline="true"
+                                 app:quoteColor="@color/blue_500"
+                                 app:quoteStripeWidth="@dimen/_5sdp"
+                                 app:quoteCapWidth="@dimen/_2sdp"
+                                />
+                         </LinearLayout>-->
+
+                        <LinearLayout
+                            android:id="@+id/LLCCSelectComments"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="@dimen/_25sdp"
+                            android:background="@drawable/shape_default_answer"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_below="@+id/tvContractorsComment">
+
+                            <ImageView
+                                android:id="@+id/imgans_sel_icona"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ans_sel_icon"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="@dimen/_9sdp"
+                                android:layout_marginRight="@dimen/_5sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/white"
+                                android:layout_toRightOf="@+id/imganswer_icon"
+                                android:layout_centerVertical="true"
+                                android:text="@string/select_comments" />
+                        </LinearLayout>
+                        <!--RichText-->
+
+                        <EditText
+                            android:id="@+id/edtContractorsComment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/LLCCSelectComments"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:background="@drawable/shape_edittext"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:minHeight="@dimen/_250sdp"
+                            android:padding="@dimen/_8sdp"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <!--  <Button
+                              android:id="@+id/btnFillFinish"
+                              android:layout_width="@dimen/_110sdp"
+                              android:layout_height="@dimen/_40sdp"
+                             android:layout_below="@+id/edtContractorsComment"
+                              android:layout_centerHorizontal="true"
+                              style="@style/txtStyleWhite"
+                              android:background="@drawable/finish_btn_selector"
+                              />-->
+
+                        <LinearLayout
+                            android:id="@+id/lytContractorsComment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edtContractorsComment"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="horizontal"
+                            android:gravity="right">
+
+                            <ImageView
+                                android:id="@+id/img_UndoContractorsComment"
+                                android:layout_width="@dimen/_26sdp"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/undo_blue"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/img_RedoContractorsComment"
+                                android:layout_width="@dimen/_26sdp"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:src="@drawable/redo_blue"
+                                android:scaleType="fitXY" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lytContractorsComment"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnShowFirstBack"
+                                style="@style/txtStyleWhite"
+                                android:layout_width="@dimen/_110sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_alignParentLeft="true"
+                                android:background="@drawable/back_btn_selector" />
+
+                            <Button
+                                android:id="@+id/btnFillFinish1"
+                                style="@style/txtStyleWhite"
+                                android:layout_width="@dimen/_110sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/next_btn_selector" />
+
+                            <!-- <Button
+                                 android:id="@+id/btnshowThird"
+                                 style="@style/txtStyleWhite"
+                                 android:layout_width="@dimen/_110sdp"
+                                 android:layout_height="@dimen/_40sdp"
+                                 android:layout_alignParentRight="true"
+                                 android:background="@drawable/next_btn_selector"
+                                 />-->
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <!--Client Comments-->
+                <RelativeLayout
+                    android:id="@+id/RLFillClient"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/shape_border_bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_11sdp"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tvClientComment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:text="@string/consultantscommentsclient"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+
+                            android:id="@+id/LLClientSelectComments"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="@dimen/_25sdp"
+                            android:background="@drawable/shape_default_answer"
+
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_below="@+id/tvClientComment"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imgans_sel_icona_client"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ans_sel_icon"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="@dimen/_9sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/white"
+                                android:layout_toRightOf="@+id/imganswer_icon"
+                                android:layout_centerVertical="true"
+
+                                android:text="@string/select_comments"
+
+                                />
+
+                        </LinearLayout>
+                        <!--RichText-->
+
+                        <EditText
+                            android:id="@+id/edtClientComment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/LLClientSelectComments"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:background="@drawable/shape_edittext"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:minHeight="@dimen/_250sdp"
+                            android:padding="@dimen/_8sdp"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/_11sdp" />
+                        <!--  <Button
+                              android:id="@+id/btnFillFinish"
+                              android:layout_width="@dimen/_110sdp"
+                              android:layout_height="@dimen/_40sdp"
+
+
+                             android:layout_below="@+id/edtContractorsComment"
+                              android:layout_centerHorizontal="true"
+                              style="@style/txtStyleWhite"
+
+                              android:background="@drawable/finish_btn_selector"
+                              />-->
+                        <LinearLayout
+                            android:id="@+id/lytClientComment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edtClientComment"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="horizontal"
+                            android:gravity="right">
+
+                            <ImageView
+                                android:id="@+id/img_UndoClientComment"
+                                android:layout_width="@dimen/_26sdp"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/undo_blue"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/img_RedoClientComment"
+                                android:layout_width="@dimen/_26sdp"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:src="@drawable/redo_blue"
+                                android:scaleType="fitXY" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lytClientComment"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnClientBack"
+                                style="@style/txtStyleWhite"
+                                android:layout_width="@dimen/_110sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_alignParentLeft="true"
+                                android:background="@drawable/back_btn_selector" />
+
+                            <Button
+                                android:id="@+id/btnClientNext"
+                                style="@style/txtStyleWhite"
+                                android:layout_width="@dimen/_110sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/finish_btn_selector" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <!--
+                            //new change 03-01-2017 mena vekariya
+                -->
+
+                <!--Statutory Comments-->
+                <RelativeLayout
+                    android:id="@+id/RLFillThird"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/shape_border_bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_11sdp"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tvStatutorycomments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:text="@string/statutory_certification_comments"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+
+                        <!--Richtext-->
+                        <!-- <LinearLayout
+                             android:orientation="vertical"
+
+                             android:id="@+id/LLRichtext1"
+                             android:background="@drawable/shape_answerbox"
+
+
+                             android:layout_below="@+id/tvContractorsComment"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginBottom="@dimen/_7sdp"
+                             >
+                             &lt;!&ndash;<jp.wasabeef.richeditor.RichEditor
+                                 android:id="@+id/edtAnswer"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginBottom="@dimen/_8sdp"
+                                 />&ndash;&gt;
+
+                             <com.passurvey.richtext.KnifeText
+                                 android:id="@+id/edtContractorsComment"
+
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent"
+                                 android:minHeight="@dimen/_250sdp"
+                                 android:layout_marginBottom="@dimen/_7sdp"
+                                 android:gravity="top"
+                                 android:inputType="textMultiLine"
+                                 android:background="@null"
+                                 android:textSize="@dimen/_12sdp"
+                                 android:padding="@dimen/_8sdp"
+
+                                 app:bulletColor="@color/colorTextGray"
+                                 app:bulletRadius="@dimen/_3sdp"
+                                 app:bulletGapWidth="@dimen/_5sdp"
+                                 app:historyEnable="true"
+                                 app:historySize="99"
+                                 app:linkColor="@color/blue_500"
+                                 app:linkUnderline="true"
+                                 app:quoteColor="@color/blue_500"
+                                 app:quoteStripeWidth="@dimen/_5sdp"
+                                 app:quoteCapWidth="@dimen/_2sdp"
+                                 />
+
+                         </LinearLayout>-->
+                        <!--RichText-->
+                        <!--
+                                            //new change 03-01-2017 mena vekariya
+                        -->
+                        <EditText
+                            android:id="@+id/edtStatutorycomments"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/tvStatutorycomments"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:background="@drawable/shape_edittext"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:minHeight="@dimen/_250sdp"
+                            android:padding="@dimen/_8sdp"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/_11sdp" />
+                        <!--  <Button
+                              android:id="@+id/btnFillFinish"
+                              android:layout_width="@dimen/_110sdp"
+                              android:layout_height="@dimen/_40sdp"
+                             android:layout_below="@+id/edtContractorsComment"
+                              android:layout_centerHorizontal="true"
+                              style="@style/txtStyleWhite"
+
+                              android:background="@drawable/finish_btn_selector"
+                              />-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edtStatutorycomments"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnShowSecondBack"
+                                style="@style/txtStyleWhite"
+                                android:layout_width="@dimen/_110sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_alignParentLeft="true"
+                                android:background="@drawable/back_btn_selector" />
+                            <!--<Button
+                                android:id="@+id/btnFillFinish1"
+                                style="@style/txtStyleWhite"
+                                android:layout_width="@dimen/_110sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/finish_btn_selector"
+                                />-->
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!--</ScrollView>-->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

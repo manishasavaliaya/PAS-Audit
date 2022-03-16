@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_30sdp"
+    android:layout_marginBottom="@dimen/_30sdp"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    >
+    <RelativeLayout
+        android:id="@+id/RLSurveyTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/shape_border_top_default_ans"
+
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                style="@style/txtStyleWhite"
+                android:text="@string/photouploading"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:background="@drawable/shape_border_bottom"
+        android:layout_below="@+id/RLprofileTop"
+        >-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_border_bottom"
+        android:layout_below="@+id/RLSurveyTop"
+        >
+       <TextView
+           android:id="@+id/tvprogresspercentage"
+           android:layout_margin="@dimen/_15sdp"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_30sdp"
+           android:textColor="@color/colorTextGray"
+           android:textSize="@dimen/_20sdp"
+           android:gravity="center"
+           android:text="100 %"
+           android:layout_marginTop="@dimen/_10sdp"
+           />
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/greenprogress"
+            />
+    </LinearLayout>
+
+    <!--</ScrollView>-->
+
+</RelativeLayout>

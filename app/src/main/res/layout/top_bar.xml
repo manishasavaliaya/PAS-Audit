@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnrTopBar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_bar_height"
+    android:background="@color/colorRed"
+    android:padding="@dimen/tiny_margin"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/lnrLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:visibility="visible" />
+
+        <com.passurvey.customviews.CustomBoldTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/half_tiny_margin"
+            android:layout_toRightOf="@+id/imgBack"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lnrTopBarRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+
+
+
+        <ImageView
+            android:id="@+id/imgTopFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/half_tiny_margin"
+            android:adjustViewBounds="true"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</RelativeLayout>

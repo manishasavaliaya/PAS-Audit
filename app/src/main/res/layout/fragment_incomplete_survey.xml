@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="@dimen/_10sdp"
+    tools:context=".activities.SplashActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+        android:id="@+id/RLSurveyTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/shape_border_top"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/survey_icon" />
+
+            <TextView
+                style="@style/txtStyleWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/incomplete_survey"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+        <RelativeLayout
+
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/shape_border_bottom"
+            android:minHeight="@dimen/_180sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <LinearLayout
+                android:id="@+id/LLIncompleteMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/shape_incompletesurvey"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llAuditName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp">
+
+                    <TextView
+                        android:id="@+id/tvIncompleteSurveyName"
+                        style="@style/txtStyleGray"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:text="Survey 1"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:src="@drawable/gray_right_icon"
+
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorTextGray" />
+
+                <RelativeLayout
+                    android:id="@+id/rlAuditDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <ImageView
+                        android:id="@+id/imgCalendar"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:src="@drawable/calender_icon" />
+
+                    <TextView
+                        android:id="@+id/tvIncompleteDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_toRightOf="@+id/imgCalendar"
+                        android:gravity="center_vertical"
+                        android:text="21-10-2016"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <ImageView
+                        android:id="@+id/imgWatch"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:layout_toRightOf="@+id/tvIncompleteDate"
+
+                        android:src="@drawable/watch_icon"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tvIncompleteTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_toRightOf="@+id/imgWatch"
+                        android:gravity="center_vertical"
+                        android:text="21-10-2016"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <!-- <ImageView
+                         android:id="@+id/imgIncompleteImage"
+
+                         android:layout_width="@dimen/_85sdp"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/incomplete_note"
+                         android:layout_marginRight="@dimen/_7sdp"
+                         android:layout_centerVertical="true"
+                         android:layout_alignParentRight="true"
+                         android:layout_alignParentEnd="true" />-->
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorTextGray" />
+
+                <RelativeLayout
+                    android:id="@+id/rlAuditSite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:paddingTop="@dimen/_7sdp">
+
+                    <TextView
+                        android:id="@+id/tvIncompleteSiteAddressTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:gravity="center_vertical"
+                        android:text="Site Address"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tvIncompleteSiteAddressTitleValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvIncompleteSiteAddressTitle"
+                        android:layout_marginLeft="@dimen/_8sdp"
+
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorTextGray" />
+
+                <RelativeLayout
+                    android:padding="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imgIncompleteImage"
+
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_7sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/incomplete_note" />
+                    <ImageView
+                        android:id="@+id/imgdiscard"
+
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_7sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/discard_btn" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

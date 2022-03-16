@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp">
+
+
+    <ImageView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/attachedImg"
+        android:layout_width="@dimen/_90sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/add_image_pic"
+        android:layout_height="@dimen/_90sdp"
+        />
+
+    <ImageView
+        android:id="@+id/closeImg"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_marginLeft="-15dp"
+
+        android:src="@drawable/close_icon_large"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+         />
+    <!--<ImageView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/attachedImg"
+        android:layout_width="@dimen/_80sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/add_image_pic"
+        android:layout_height="@dimen/_80sdp"
+        />
+    <ImageView
+        android:id="@+id/closeImg"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_marginLeft="-15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/close_icon_large"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/attachedImg"
+        android:layout_toEndOf="@+id/attachedImg" />-->
+</RelativeLayout>

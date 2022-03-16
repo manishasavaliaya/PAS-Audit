@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shap_border_not_applicable_dialog"
+    android:layout_margin="@dimen/_15sdp">
+
+    <RelativeLayout
+        android:id="@+id/RLSurveyTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/shape_border_top_default_ans"
+
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                style="@style/txtStyleWhite"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+
+
+        android:scrollbars="none"
+        android:background="@drawable/shape_border_bottom"
+        android:layout_below="@+id/RLprofileTop"
+        >-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_border_bottom"
+        android:layout_below="@+id/RLSurveyTop"
+        android:layout_marginLeft="@dimen/_1sdp"
+        android:layout_marginRight="@dimen/_1sdp"
+
+        >
+        <TextView
+            android:id="@+id/tvnotapplicable"
+            android:layout_margin="@dimen/_7sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextGray"
+            android:textSize="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="@string/notapplicable"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="@dimen/_4sdp"
+            >
+
+            <Button
+                android:id="@+id/btnyes"
+               android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:background="@drawable/btn_background"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:text="@string/yes"
+                />
+            <Button
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_weight="1"
+                android:id="@+id/btnno"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:background="@drawable/btn_background"
+
+
+                android:text="@string/no"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!--</ScrollView>-->
+
+</RelativeLayout>

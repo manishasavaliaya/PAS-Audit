@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_30sdp"
+    android:layout_marginBottom="@dimen/_30sdp"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    >
+    <RelativeLayout
+        android:id="@+id/RLSurveyTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/shape_border_top_default_ans"
+
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            >
+            <ImageView
+
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ans_sel_icon"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_7sdp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                style="@style/txtStyleWhite"
+                android:text="@string/select_answer"
+                android:textStyle="bold"
+                android:id="@+id/TVTitleName"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+
+
+        android:scrollbars="none"
+        android:background="@drawable/shape_border_bottom"
+        android:layout_below="@+id/RLprofileTop"
+        >-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/RLSurveyTop"
+        android:id="@+id/RVDialogDefaultAns"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_border_bottom"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <!--</ScrollView>-->
+
+</RelativeLayout>
