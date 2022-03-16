@@ -124,7 +124,6 @@ public abstract class BaseActivity extends AppCompatActivity {
 //            }
 //        });
 //    }
-
 //    private final int NUMBER_OF_SUGGESTIONS=8;
 //
 //    public void fetchSuggestionsFor(String input){
